@@ -17,7 +17,6 @@ def test__gen_good_tree(gen_good_tree):
     [[1], 1],  # We can't see tree. No children.
     [[2, 2], 1],  # Two roots.
     [[1, 0, 4], 1],  # Empty layers.
-    [[1, 2, 3], 1],  # This should fail cause of correct structure
 ])
 def test__gen_bad_structure_tree(gen_bad_structure_tree, capsys):
     with pytest.raises(BadTreeStructure) as e_info:
